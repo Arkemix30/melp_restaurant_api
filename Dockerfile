@@ -7,10 +7,10 @@ WORKDIR /melp_restaurant_api
 
 ENV PYTHONPATH=${PYTHONPATH}:${PWD}
 
-COPY poetry.lock pyproject.toml /melp_restaurant_api/
+COPY pyproject.toml /melp_restaurant_api/
 RUN pip install poetry
 RUN poetry config virtualenvs.create false \
-    && poetry install --no-interaction --no-ansi
+    && poetry install --no-interaction --no-ansi --no-root
 
 COPY ./app /melp_restaurant_api/app
 COPY ./alembic /melp_restaurant_api/alembic
