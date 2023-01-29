@@ -1,6 +1,12 @@
 <h1 align="center">Melp Restaurants API</h1>
 
 Restful API for managing restaurants. Written in Python using FastAPI.
+<br>
+
+### Live Demo
+https://melp-restaurants-api.onrender.com
+
+<br>
 
 ## Table of Content 📑
 ---

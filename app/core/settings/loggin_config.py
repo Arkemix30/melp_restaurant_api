@@ -17,6 +17,11 @@ def get_logger(log_name=""):
     log = logging.getLogger(log_name)
     log_formatter = logging.Formatter(LOG_FORMAT)
 
+    # Console Handler
+    console_handler = logging.StreamHandler()
+    console_handler.setFormatter(log_formatter)
+    console_handler.setLevel(logging.DEBUG)
+
     # File Handler
     file_handler_info = logging.FileHandler(LOG_FILE_INFO, mode="a")
     file_handler_info.setFormatter(log_formatter)
@@ -33,6 +38,7 @@ def get_logger(log_name=""):
     # Adding error handlers
     if DEV:
         log.addHandler(file_handler_error)
+        log.addHandler(console_handler)
 
     log.setLevel(logging.DEBUG)
 
