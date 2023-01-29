@@ -20,7 +20,7 @@ pandas = "^1.5.3"
 commitizen = "^2.40.0"
 
 
-[tool.poetry.group.dev.dependencies]
+[tool.poetry.dev-dependencies]
 httpx = "^0.23.3"
 pytest = "^7.2.1"
 pre-commit = "^3.0.1"

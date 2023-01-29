@@ -16,3 +16,7 @@ COPY ./app /melp_restaurant_api/app
 COPY ./alembic /melp_restaurant_api/alembic
 COPY ./alembic.ini /melp_restaurant_api/alembic.ini
 COPY ./main.py /melp_restaurant_api/
+
+EXPOSE 8000
+
+CMD ["poetry", "run", "uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
