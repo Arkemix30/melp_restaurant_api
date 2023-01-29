@@ -12,7 +12,6 @@ RUN pip install poetry
 RUN poetry config virtualenvs.create false \
     && poetry install --no-interaction --no-ansi
 
-COPY ./.env /melp_restaurant_api/.env
 COPY ./app /melp_restaurant_api/app
 COPY ./alembic /melp_restaurant_api/alembic
 COPY ./alembic.ini /melp_restaurant_api/alembic.ini
