@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "melp-restaurants-api"
+version = "0.1.0"
+description = ""
+authors = ["SilvaEnmanuel30 <enmanuel.silva@spotcloud.io>"]
+readme = "README.md"
+packages = [{include = "melp_restaurants_api"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = {extras = ["all"], version = "^0.89.1"}
+uvicorn = {extras = ["standard"], version = "^0.20.0"}
+pydantic = "^1.10.4"
+python-dotenv = "^0.21.1"
+sqlmodel = "^0.0.8"
+GeoAlchemy2 = "0.10.2"
+alembic = "^1.9.2"
+psycopg2-binary = "^2.9.5"
+pandas = "^1.5.3"
+commitizen = "^2.40.0"
+
+
+[tool.poetry.group.dev.dependencies]
+httpx = "^0.23.3"
+pytest = "^7.2.1"
+pre-commit = "^3.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
