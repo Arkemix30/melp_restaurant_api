@@ -126,7 +126,7 @@ $ export PATH="$HOME/.poetry/bin:$PATH"
 Clone the repository
 
   ```bash
-  $ git clone https://github.com/SPOT-TECHNOLOGIES/occupancy-backend
+  $ git clone https://github.com/Arkemix30/melp_restaurant_api
   ```
 
 Enter into project's root folder and run:
